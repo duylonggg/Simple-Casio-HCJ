@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #70c5ef, #7cfcb1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background: #3b485b;
+
+    /* Vien to hon 20px */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.calculator form input {
+    /* Xoa vien */
+    border: 0;
+    outline: 0;
+
+    /* Chieu cao - rong tung o */
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+
+    /* Bong cua tung o */
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+
+    /* Nen theo cai Calculator */
+    background: transparent;
+
+    /* Do lon cua text trong o */
+    font-size: 20px;
+
+    /* Mau cua text */
+    color: #fff;
+
+    /* Su dung con tro de an vao cac o */
+    cursor: pointer;
+
+    /* Khoang cach giua cac o */
+    margin: 10px;
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+form input.operator {
+    color: #33ffd8;
+}
+
+form input.command {
+    background-color: rgb(242, 187, 85);
+}
